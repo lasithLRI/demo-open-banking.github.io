@@ -1,0 +1,252 @@
+{
+  "user": {
+    "name": "James Smith",
+    "image": "/demos/usecases/dist/resources/assets/images/profile/dp_image.webp",
+    "background":"/demos/usecases/dist/resources/assets/images/background/bg-image.webp"
+  },
+  "name": {
+    "route": "accounts-central",
+    "applicationName": "Accounts Central",
+    "banksInfo": [{"name": "Ascend Global Bank","route": "ascend-global"},{"name": "Trust Union","route": "trust-union"},{"name": "Global Asset Trust","route": "global-asset-trust"}]
+  },
+  "banks": [
+    {
+      "name": "Ascend Global Bank",
+      "image": "/demos/usecases/dist/resources/assets/images/logos/assend_global_bank_logo.png",
+      "currency": "GBP",
+      "color":"rgba(255,135,110,0.6)",
+      "border":"rgba(255,135,110, 1)"
+    },
+    {
+      "name": "Global Asset Trust",
+      "image": "/demos/usecases/dist/resources/assets/images/logos/global_asset_trust_logo.png",
+      "currency": "GBP",
+      "color":"rgba(255, 185, 97, 0.6)",
+      "border":"rgba(255, 185, 97, 1)"
+    },
+    {
+      "name": "Trust Union",
+      "image": "/demos/usecases/dist/resources/assets/images/logos/trust_union_logo.png",
+      "currency": "GBP",
+      "color":"rgba(254, 239, 184, 0.6)",
+      "border":"rgba(254, 239, 184, 1)"
+    }
+  ],
+  "accounts": [
+    {
+      "id": "0006-1123-7724",
+      "bank": "Ascend Global Bank",
+      "name": "savings account",
+      "balance": 1350
+
+    },
+    {
+      "id": "0006-4435-9454",
+      "bank": "Ascend Global Bank",
+      "name": "Current account",
+      "balance": 450
+    },
+    {
+      "id": "0043-4435-9454",
+      "bank": "Global Asset Trust",
+      "name": "Current account",
+      "balance": 750
+    },
+    {
+      "id": "0054-4435-9454",
+      "bank": "Trust Union",
+      "name": "Current account",
+      "balance": 1265.20
+    }
+  ],
+  "payees": [
+    {
+      "name": "A.C.ME.",
+      "bank": "First National Bank",
+      "accountNumber": "1234567890"
+    },
+    {
+      "name": "John Smith",
+      "bank": "Ally Bank",
+      "accountNumber": "0987654321"
+    },
+    {
+      "name": "Jane Doe",
+      "bank": "TD Canada Trust",
+      "accountNumber": "1122334455"
+    },
+    {
+      "name": "Gas Company",
+      "bank": "Bank of America",
+      "accountNumber": "9988776655"
+    },
+    {
+      "name": "Internet Provider",
+      "bank": "Chase Bank",
+      "accountNumber": "5566778899"
+    },
+    {
+      "name": "Sarah Johnson",
+      "bank": "Wells Fargo",
+      "accountNumber": "4455667788"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "T00123456",
+      "date": "2025-10-17",
+      "reference": "INV-4521/ABC",
+      "bank": "Ascend Global",
+      "account": "1234-5678-9012-3456",
+      "amount": "1250.75",
+      "currency": "USD"
+    },
+    {
+      "id": "T00123457",
+      "date": "2025-10-16",
+      "reference": "PAY-9876/XYZ",
+      "bank": "Trust Union",
+      "account": "9876-5432-1098-7654",
+      "amount": "500.00",
+      "currency": "EUR"
+    },
+    {
+      "id": "T00123458",
+      "date": "2025-10-17",
+      "reference": "DEP-3321/LMN",
+      "bank": "Global Asset Trust",
+      "account": "1111-2222-3333-4444",
+      "amount": "99.99",
+      "currency": "GBP"
+    },
+    {
+      "id": "T00123459",
+      "date": "2025-10-15",
+      "reference": "FEE-7765/PQR",
+      "bank": "Ascend Global",
+      "account": "5555-6666-7777-8888",
+      "amount": "25.50",
+      "currency": "USD"
+    }
+  ],
+  "standingOrders": [
+    {
+      "ID": "SO-3001",
+      "Reference": "RENT-OCT-25",
+      "Bank": "Ascend  Global",
+      "NextDate": "2025-11-01",
+      "Status": "Active",
+      "Amount": "1850.00",
+      "Currency": "GBP"
+    },
+    {
+      "ID": "SO-3002",
+      "Reference": "SUBSCRIPTION-PRO",
+      "Bank": "Trust Union",
+      "NextDate": "2025-10-25",
+      "Status": "Active",
+      "Amount": "19.99",
+      "Currency": "USD"
+    },
+    {
+      "ID": "SO-3003",
+      "Reference": "MORTGAGE-PAY",
+      "Bank": "Global Asset Trust",
+      "NextDate": "2025-11-05",
+      "Status": "Active",
+      "Amount": "2100.50",
+      "Currency": "EUR"
+    },
+    {
+      "ID": "SO-3004",
+      "Reference": "UTILITY-ELECTRIC",
+      "Bank": "Ascend Global",
+      "NextDate": "2025-10-28",
+      "Status": "Active",
+      "Amount": "85.20",
+      "Currency": "GBP"
+    },
+    {
+      "ID": "SO-3005",
+      "Reference": "ANNUAL-LICENSE",
+      "Bank": "Trust Union",
+      "NextDate": "2026-01-01",
+      "Status": "Paused",
+      "Amount": "299.00",
+      "Currency": "USD"
+    }
+  ],
+  "types": [
+    {
+      "id": "payment",
+      "title": "Payment",
+      "useCases": [
+        {
+          "id": "usecase1",
+          "title": "use case 1",
+          "steps": [
+            { "id": "1", "name": "Login to your Account", "component": "login" },
+            { "id": "2", "name": "Two step verification", "component": "otp" },
+            { "id": "3", "name": "Payment Information", "component": "payment-confirmation" },
+            { "id": "4", "name": "redirection", "component": "redirecting" }
+          ]
+        }
+
+      ]
+    },
+    {
+      "id": "account",
+      "title": "Account",
+      "useCases": [
+        {
+          "id": "use case 2",
+          "title": "use case 2",
+          "steps": [
+            { "id": "1", "name": "Login to your email", "component": "login-with-email" },
+            { "id": "2", "name": "Two step verification", "component": "otp" },
+            { "id": "3", "name": "select the account", "component": "account-select" },
+            { "id": "4", "name": "authorize the selection", "component": "account-authorize"},
+            { "id": "5", "name": "redirection", "component": "redirecting"}
+          ]
+        },
+        {
+          "id": "use case 3",
+          "title": "use case 3",
+          "steps": [
+            { "id": "1", "name": "Login to your Account", "component": "login" },
+            { "id": "2", "name": "Two step verification", "component": "otp" },
+            { "id": "3", "name": "select the account two", "component": "account-select-uc-2" },
+            { "id": "4", "name": "authorize the selection", "component": "account-authorization-uc-2"},
+            { "id": "5", "name": "redirection", "component": "redirecting"}
+          ]
+        },
+        {
+          "id": "use case 4",
+          "title": "use case 4",
+          "steps": [
+            { "id": "1", "name": "Login to your Account", "component": "login" },
+            { "id": "2", "name": "Two step verification", "component": "otp" },
+            { "id": "3", "name": "select the account two", "component": "account-select" },
+            { "id": "4", "name": "authorize the selection", "component": "account-authorize"},
+            { "id": "5", "name": "redirection", "component": "redirecting"}
+          ]
+        },
+        {
+          "id": "use case 5",
+          "title": "use case 5",
+          "steps": [
+            { "id": "1", "name": "Login to your Account", "component": "login" },
+            { "id": "2", "name": "Two step verification", "component": "otp" },
+            { "id": "3", "name": "select the account three", "component": "account-select-uc-3" },
+            { "id": "4", "name": "redirection", "component": "redirecting"}
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+
