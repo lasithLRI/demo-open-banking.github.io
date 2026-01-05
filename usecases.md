@@ -6,6 +6,6 @@ toc: true
 permalink: /demos/usecases
 ---
 
-You are currently logged into Accounts Central, a comprehensive account aggregator application. This platform demonstrates the core capabilities of Open Banking by allowing you to view a consolidated summary of your finances across various institutions. To explore the Account Information (AISP) journey, select Add Account to connect a new bank. To simulate a Payment Initiation (PISP) transaction, simply click Pay Bills. For the purposes of this demo, the login pages and OTP prompts will accept any alphanumeric input.
+Accounts Central is an Open Banking demo that allows you to aggregate financial data via the Add Account button or simulate direct transfers through the Pay Bills feature. You can navigate the AISP and PISP journeys easily as all login and OTP fields accept any alphanumeric input for this simulation.
 
 <iframe class="embed-responsive-item cIframe innerpadding" src="/demos/usecases/dist/tpp.html"></iframe>
