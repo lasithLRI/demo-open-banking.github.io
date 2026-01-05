@@ -216,6 +216,8 @@ h1.cReducedBottomMargin {
 	width: 100%;
 	height: 100vh;
 	border: 1px solid green;
+	padding: 10px;
+	background: #0099cc;
 }
 
 .cIconTitle {
