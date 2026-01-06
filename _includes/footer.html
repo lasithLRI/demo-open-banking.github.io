@@ -1,5 +1,11 @@
 <section class="cFooter">
     <div class="container">
-            <p class="mt-5">WSO2 Open Banking | Copyright © WSO2 LLC. 2026</p>
+            <p class="mt-5">WSO2 Open Banking | Copyright © WSO2 LLC.
+                <span id="year"></span>
+            </p>
     </div>
 </section>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
