@@ -121,11 +121,8 @@ ul.cFloatRight {
 	padding: 1rem 0;
 }
 
-
-
 /* .section-nav {
-   
-   
+
 position: fixed;
     padding: 3rem 4rem;
     background-color:#fff;
@@ -146,13 +143,11 @@ h1.cReducedBottomMargin {
 	color: #fff;
 }
 
-
 /* NAVIGATION */
 
 .nav-link {
 	color: #fff !important;
 }
-
 
 /* TOC */
 
@@ -231,9 +226,6 @@ h1.cReducedBottomMargin {
 	 display: block;
 
 		text-transform: uppercase;
-		
-
-	
 }
 
 .cStep {
@@ -298,7 +290,6 @@ h1.cReducedBottomMargin {
 padding: 1rem;
 }
 
-
 .cPagecontent img {
 		max-width: 100%;
 } 
@@ -341,8 +332,6 @@ padding: 1rem;
 	.cTocConatiner {
 		display: none;
 	}
-	
-
 }
 
 
@@ -360,8 +349,6 @@ padding: 1rem;
 	.cSliderImage {
 		padding-top: 30px;
 	}
-	
-
 }
 
 @media (max-width: 550px) { 
