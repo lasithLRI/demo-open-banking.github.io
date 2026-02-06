@@ -2,73 +2,43 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-
-   
-
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     {% include social-media.html %}
-
-
     <link rel="stylesheet" type="text/css" href="/demos/pisp/libs/bootstrap-5.2.0/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/css/common-styles.css" >
     <link rel="stylesheet" type="text/css" href="/css/ob.css" >
-    
-
     <title>WSO2 Open Banking - {{ page.title }}</title>
-
   </head>
-
-
-
-
   <body>
       <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56BQ56J"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
    <div class="row cNavRow">
          {% include nav.html %}
    </div>
-
-
    <section class="cHeader cSectionAboveHighlight cIntroSection cTitle">
       <div class="container">
-       
-    
      <div class="row">
           <div class="col-sm-12 col-md-9 col-lg-9">
                <h1 class="cReducedBottomMargin" style="display: inline-block;">{{ page.title }}</h1>
-              <p>{{ page.intro}}</p> 
+              <p>{{ page.intro}}</p>
           </div>
           <div class="clearfix"></div>
-
       </div>
-
-
     </div>
-
 </section>
 
 <section class="cIntro cWhiteBG">
     <div class="container ">
         <div class="row">
-      
-          
-
                 <div class="col-sm-12 col-md-12 col-lg-12">
                     <div class=" cWhiteBG cAddedBottomMargin">
                         {{ content }}
                         <div class="clearfix"></div>
-                    </div>       
+                    </div>
                 </div>
-
-
             </div>
-    
-
-      
     </div>
 </section>
 
@@ -81,9 +51,9 @@
 
 
 
-     
- 
-  
+
+
+
 
 
 
@@ -99,7 +69,7 @@
     <style>
 body {
     /* background: #999999; */
- 
+
 
     background-size: 100%;
     background-position: 0px -130px;
@@ -110,23 +80,23 @@ body {
     <script>
 //  $( ".section-nav" ).wrap( "<div class='col-sm-12 col-md-4 col-lg-4 ctoccontainer'></div>" );
 
- 
+
 
 
 
  $(window).scroll(function() {
     if ($(this).scrollTop() > 380) {
         $('.cToC-pannel').addClass('stick');
-    
-     
+
+
 
     } else {
 
         $('.cToC-pannel').removeClass('stick');
-      
-  
+
+
     }
-    
+
 
 });
 
